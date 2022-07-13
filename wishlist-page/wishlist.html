@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Wish list</title>
+       <script defer src="wishlist.js"></script>
+    </head>
+    <body>
+        <h1>My wish list</h1>
+
+
+        <form nam='f1' action="" onsubmit = "return validation()" method="POST">
+        <input type="hidden" name="comanda" value="logout">
+        <input type = "submit" name="comanda"  value="Add new item to your wish list" id="new-item-btn" onclick="f1.action='/wishlist-page/add-new.html';return true;">
+        <input type = "button" name="comanda" value="Delete item" id="delete-btn">
+        <input type = "button"  name="comanda" value="Edit item" id="edit-btn">
+        <input type = "submit"  name="comanda" value="Log Out" name="logout" id="logout"  onclick="f1.action='index.php';return true;">
+        </form>
+
+     
+    </body>
+</html>

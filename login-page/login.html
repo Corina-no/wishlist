@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Login Page</title>
+      <link rel="stylesheet" href="login.css">
+      <script defer src="login.js"></script>
+      
+   </head>
+  <body>
+    <main id="main-holder">
+      <h1 id=" login-header" >Login</h1>
+
+    
+      
+      <div id="msg-error-login">
+          <p id="error-msg">Invalid username and/or password</p>
+
+      </div>
+
+      <form name="f1" action = "" onsubmit = "return validation()" method = "POST">
+        <input type="hidden" name="comanda" value="Login">
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input type="submit" value="Login" id="login-form-submit" onclick="f1.action='/caphyon/admin/index.php';return true;">
+        <input type="submit" value="Create an account" id="login-form-create" onclick="f1.action='/caphyon/create-acc/create-acc.html';return true;">
+
+      </form>
+    </main>  
+
+
+
+  </body>
+
+
+</html>

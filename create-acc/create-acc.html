@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Create account</title>
+ <link rel="stylesheet" href="create-acc.css">
+ <script defer src="create-acc.js"></script>
+
+</head>
+<body>
+    <fieldset id="field">
+    <h1>Create account</h1>
+    <form name="f1" action = "" onsubmit = "return validation()" method = "POST">
+    <input type="hidden" name="comanda" value="Create">
+    <p><label  for="username" >Username</label>
+        <input type="username" name="username" value="" id="user"  aria-selected="true">
+    </p>
+    <p><label  name="password" id="pass-field">Password
+        <input type="password" name="password" value="" >
+    </label></p>
+    <!-- <p><label  name="repassword" id="repass-field">Repeat Password
+        <input type="password" id="repassword" value="">
+
+    </label></p> -->
+    <input type="submit" value="Create" id="create-form-submit" onclick="f1.action='index.php';return comanda;">
+
+    <p>Already had an account? Go back to login page</p>
+    <input type="submit" value ="Login" id="back-to-login-page" onclick="f1.action='/caphyon/login-page/login.html';return true;" >
+
+    </form>
+</fieldset>
+
+</body>
+
+</html>
